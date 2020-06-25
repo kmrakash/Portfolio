@@ -1,6 +1,14 @@
 /* Components
   ========================================================================== */
-@import './buttons';
-@import './scroll-to-top';
-@import './titles';
+// @import './buttons';
+// @import './scroll-to-top';
+// @import './titles';
 
+.hero {
+  border: 1px solid blue;
+  &-textContainer {
+    border: 1px solid green;
+    margin: 5px;
+    padding: 5px;
+  }
+}
