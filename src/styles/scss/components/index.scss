@@ -6,9 +6,23 @@
 
 .hero {
   border: 1px solid blue;
+  display:flex;
+  align-items: center;
+  height: 100vh;
   &-textContainer {
     border: 1px solid green;
     margin: 5px;
     padding: 5px;
+    .subText {
+      color: blueviolet;
+      font-size: 1.5rem;
+    }
+    h1{
+      font-size: 10rem;
+      font-weight: 700;
+      margin:0;
+      padding: 5px 0;
+    }
+    
   }
 }
