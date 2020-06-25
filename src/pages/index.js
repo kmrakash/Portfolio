@@ -5,12 +5,12 @@ import Layout from "../components/layout"
 // import Image from "../components/image"
 import SEO from "../components/seo"
 
-import Hero from "../components/hero";
+import CommingSoon from "../components/commingSoon"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <Hero />
+    <CommingSoon />
   </Layout>
 )
 
