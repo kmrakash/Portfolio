@@ -1,19 +1,18 @@
 ---
-title: 'About Me'
-avatar: './me.jpg'
+title: "About Me"
+avatar: "./me.jpg"
 skills:
   - JavaScript (ES6+)
+  - c++
+  - Python
   - HTML & (S)CSS
   - React
-  - Vue
   - Node.js
-  - WordPress
 ---
 
-Hello! I'm Brittany, a software engineer based in Boston, MA.
+Hello! I'm Akash, third year computer science undergrade at IEM, Kolkata.
 
-I enjoy creating things that live on the internet, whether that be websites, applications, or anything in between. My goal is to always build products that provide pixel-perfect, performant experiences.
-
-Shortly after graduating from [Northeastern University](https://www.ccis.northeastern.edu/), I joined the engineering team at [Upstatement](https://www.upstatement.com/) where I work on a wide variety of interesting and meaningful projects on a daily basis.
+I am currently exploring the areas of fullstack development specially in React and Nodejs.
+My goal is always to build products that provide pixel-perfect, performant experiences.
 
 Here are a few technologies I've been working with recently:
