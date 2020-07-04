@@ -1,9 +1,9 @@
 ---
-date: '3'
-title: 'OctoProfile'
-cover: './octoprofile.png'
-github: 'https://github.com/bchiang7/octoprofile'
-external: 'https://octoprofile.now.sh'
+date: "3"
+title: "OctoProfile"
+cover: "./octoprofile.png"
+github: "https://github.com/bchiang7/octoprofile"
+external: "https://octoprofile.now.sh"
 tech:
   - Next.js
   - Chart.js
