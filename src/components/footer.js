@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react';
-import PropTypes from 'prop-types';
-import { FormattedIcon } from '@components/icons';
-import { socialMedia } from '@config';
-import styled from 'styled-components';
-import { theme, mixins, media } from '@styles';
-const { colors, fontSizes, fonts } = theme;
+import React, { useState, useEffect } from "react"
+import PropTypes from "prop-types"
+import { FormattedIcon } from "@components/icons"
+import { socialMedia } from "@config"
+import styled from "styled-components"
+import { theme, mixins, media } from "@styles"
+const { colors, fontSizes, fonts } = theme
 
 const StyledContainer = styled.footer`
   ${mixins.flexCenter};
@@ -13,7 +13,7 @@ const StyledContainer = styled.footer`
   text-align: center;
   height: auto;
   min-height: 70px;
-`;
+`
 const StyledSocial = styled.div`
   color: ${colors.lightSlate};
   width: 100%;
@@ -21,29 +21,29 @@ const StyledSocial = styled.div`
   margin: 0 auto 10px;
   display: none;
   ${media.tablet`display: block;`};
-`;
+`
 const StyledSocialList = styled.ul`
   ${mixins.flexBetween};
   padding: 0;
   margin: 0;
   list-style: none;
-`;
+`
 const StyledSocialLink = styled.a`
   padding: 10px;
   svg {
     width: 20px;
     height: 20px;
   }
-`;
+`
 const StyledMetadata = styled.div`
   font-family: ${fonts.SFMono};
   font-size: ${fontSizes.xs};
   line-height: 1;
-`;
+`
 const StyledGitHubLink = styled.a`
   color: ${colors.lightSlate};
   padding: 10px;
-`;
+`
 const StyledGitHubInfo = styled.div`
   margin-top: 10px;
 
@@ -58,29 +58,29 @@ const StyledGitHubInfo = styled.div`
     width: auto;
     margin-right: 5px;
   }
-`;
+`
 
 const Footer = () => {
   const [githubInfo, setGitHubInfo] = useState({
     stars: null,
     forks: null,
-  });
+  })
 
   useEffect(() => {
-    if (process.env.NODE_ENV !== 'production') {
-      return;
+    if (process.env.NODE_ENV !== "production") {
+      return
     }
-    fetch('https://api.github.com/repos/bchiang7/v4')
+    fetch("https://api.github.com/repos/bchiang7/v4")
       .then(response => response.json())
       .then(json => {
-        const { stargazers_count, forks_count } = json;
+        const { stargazers_count, forks_count } = json
         setGitHubInfo({
           stars: stargazers_count,
           forks: forks_count,
-        });
+        })
       })
-      .catch(e => console.error(e));
-  }, []);
+      .catch(e => console.error(e))
+  }, [])
 
   return (
     <StyledContainer>
@@ -93,7 +93,8 @@ const Footer = () => {
                   href={url}
                   target="_blank"
                   rel="nofollow noopener noreferrer"
-                  aria-label={name}>
+                  aria-label={name}
+                >
                   <FormattedIcon name={name} />
                 </StyledSocialLink>
               </li>
@@ -102,31 +103,32 @@ const Footer = () => {
       </StyledSocial>
       <StyledMetadata tabindex="-1">
         <StyledGitHubLink
-          href="https://github.com/bchiang7/v4"
+          href="https://github.com/kmrakash"
           target="_blank"
-          rel="nofollow noopener noreferrer">
-          <div>Designed &amp; Built by Brittany Chiang</div>
-
-          {githubInfo.stars && githubInfo.forks && (
-            <StyledGitHubInfo>
-              <span>
-                <FormattedIcon name="Star" />
-                <span>{githubInfo.stars.toLocaleString()}</span>
-              </span>
-              <span>
-                <FormattedIcon name="Fork" />
-                <span>{githubInfo.forks.toLocaleString()}</span>
-              </span>
-            </StyledGitHubInfo>
-          )}
+          rel="nofollow noopener noreferrer"
+        >
+          <div>Built by Akash Kumar</div>
         </StyledGitHubLink>
       </StyledMetadata>
     </StyledContainer>
-  );
-};
+  )
+}
 
 Footer.propTypes = {
   githubInfo: PropTypes.object,
-};
+}
 
-export default Footer;
+export default Footer
+
+// {githubInfo.stars && githubInfo.forks && (
+//   <StyledGitHubInfo>
+//     <span>
+//       <FormattedIcon name="Star" />
+//       <span>{githubInfo.stars.toLocaleString()}</span>
+//     </span>
+//     <span>
+//       <FormattedIcon name="Fork" />
+//       <span>{githubInfo.forks.toLocaleString()}</span>
+//     </span>
+//   </StyledGitHubInfo>
+// )}
