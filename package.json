@@ -63,9 +63,7 @@
   },
   "keywords": [
     "gatsby",
-    "portfolio",
-    "Computer Science",
-    "IEM"
+    "portfolio"
   ],
   "scripts": {
    "build": "gatsby build",

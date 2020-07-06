@@ -1,5 +1,5 @@
 module.exports = {
-  siteTitle: "Akash Kumar | Developer",
+  siteTitle: "Akash | Portfolio",
   siteDescription: "Akash is a full stack developer enthusiast ",
   siteKeywords:
     "Akash Kumar, CSE, Portfolio, kmrakash, software engineer, front-end engineer, web developer, javascript, kolkata",
@@ -53,8 +53,8 @@ module.exports = {
   navHeight: 100,
 
   colors: {
-    green: "#64ffda",
-    navy: "#0a192f",
+    green: "#a631d7",
+    navy: "#171425",
     darkNavy: "#020c1b",
   },
 
