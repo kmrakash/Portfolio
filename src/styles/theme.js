@@ -27,13 +27,13 @@ const theme = {
   },
 
   fontSizes: {
-    xs: "12px",
-    smish: "13px",
-    sm: "14px",
-    md: "16px",
-    lg: "18px",
-    xl: "20px",
-    xxl: "22px",
+    xs: "14px",
+    smish: "15px",
+    sm: "16px",
+    md: "18px",
+    lg: "20px",
+    xl: "22px",
+    xxl: "24px",
     h3: "32px",
   },
 

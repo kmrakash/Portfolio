@@ -1,20 +1,20 @@
-import React, { useEffect, useRef } from 'react';
-import PropTypes from 'prop-types';
-import Img from 'gatsby-image';
-import sr from '@utils/sr';
-import { srConfig, github } from '@config';
-import styled from 'styled-components';
-import { theme, mixins, media, Section, Heading } from '@styles';
-const { colors, fontSizes, fonts } = theme;
+import React, { useEffect, useRef } from "react"
+import PropTypes from "prop-types"
+import Img from "gatsby-image"
+import sr from "@utils/sr"
+import { srConfig, github } from "@config"
+import styled from "styled-components"
+import { theme, mixins, media, Section, Heading } from "@styles"
+const { colors, fontSizes, fonts } = theme
 
 const StyledContainer = styled(Section)`
   position: relative;
-`;
+`
 const StyledFlexContainer = styled.div`
   ${mixins.flexBetween};
   align-items: flex-start;
   ${media.tablet`display: block;`};
-`;
+`
 const StyledContent = styled.div`
   width: 60%;
   max-width: 480px;
@@ -22,7 +22,7 @@ const StyledContent = styled.div`
   a {
     ${mixins.inlineLink};
   }
-`;
+`
 const SkillsContainer = styled.ul`
   display: grid;
   grid-template-columns: repeat(2, minmax(140px, 200px));
@@ -30,7 +30,7 @@ const SkillsContainer = styled.ul`
   padding: 0;
   margin: 20px 0 0 0;
   list-style: none;
-`;
+`
 const Skill = styled.li`
   position: relative;
   margin-bottom: 10px;
@@ -39,14 +39,14 @@ const Skill = styled.li`
   font-size: ${fontSizes.smish};
   color: ${colors.slate};
   &:before {
-    content: '▹';
+    content: "▹";
     position: absolute;
     left: 0;
     color: ${colors.green};
     font-size: ${fontSizes.sm};
     line-height: 12px;
   }
-`;
+`
 const StyledPic = styled.div`
   position: relative;
   width: 40%;
@@ -59,14 +59,14 @@ const StyledPic = styled.div`
       outline: 0;
     }
   }
-`;
+`
 const StyledAvatar = styled(Img)`
   position: relative;
   mix-blend-mode: multiply;
   filter: grayscale(100%) contrast(1);
   border-radius: ${theme.borderRadius};
   transition: ${theme.transition};
-`;
+`
 const StyledAvatarLink = styled.a`
   ${mixins.boxShadow};
   width: 100%;
@@ -88,7 +88,7 @@ const StyledAvatarLink = styled.a`
   }
   &:before,
   &:after {
-    content: '';
+    content: "";
     display: block;
     position: absolute;
     width: 100%;
@@ -110,13 +110,13 @@ const StyledAvatarLink = styled.a`
     left: 20px;
     z-index: -1;
   }
-`;
+`
 
 const About = ({ data }) => {
-  const { frontmatter, html } = data[0].node;
-  const { title, skills, avatar } = frontmatter;
-  const revealContainer = useRef(null);
-  useEffect(() => sr.reveal(revealContainer.current, srConfig()), []);
+  const { frontmatter, html } = data[0].node
+  const { title, skills, avatar } = frontmatter
+  const revealContainer = useRef(null)
+  useEffect(() => sr.reveal(revealContainer.current, srConfig()), [])
 
   return (
     <StyledContainer id="about" ref={revealContainer}>
@@ -135,11 +135,11 @@ const About = ({ data }) => {
         </StyledPic>
       </StyledFlexContainer>
     </StyledContainer>
-  );
-};
+  )
+}
 
 About.propTypes = {
   data: PropTypes.array.isRequired,
-};
+}
 
-export default About;
+export default About

@@ -10,10 +10,10 @@ skills:
   - Node.js
 ---
 
-Hello! I'm Akash, third year computer science undergrade at IEM, Kolkata.
+Hey , I'm Akash , a 3rd year student at Institute of Engineering and Management, Kolkata pursuing B. Tech in Computer Science.
 
-I am currently exploring the areas of fullstack development specially in React and Nodejs.
-My goal is always to build products that provide pixel-perfect, performant experiences.
-I also take part in competitive coding contest
+I am currently exploring the areas of fullstack development specially in React and Nodejs.<br>
+I am also interested in Open Source development and competitive programming.<br>
+<br>
 
 Here are a few technologies I've been working with recently:
