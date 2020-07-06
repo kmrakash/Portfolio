@@ -3,7 +3,7 @@ date: "2015-12-21"
 title: "Participant"
 company: "Uplift Project"
 location: "#"
-range: "June -  Currently"
+range: "June 2020 - Present"
 url: "#"
 ---
 

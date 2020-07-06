@@ -1,7 +1,7 @@
 ---
 date: "2020-03-01"
 title: "Open Source Contributor"
-company: "Girls summer of code"
+company: "GirlsScript summer of code"
 location: ""
 range: "March - may 2020"
 url: "#"

@@ -7,5 +7,5 @@ range: "June 2020 - Present"
 url: "#"
 ---
 
-- Worked on main website and developed different components for the same
+- Worked on main website and developed different components and pages for the same
 - Work with a variety of different languages, platforms, frameworks, and content management systems such as JavaScript, TypeScript, Next.js, React,
