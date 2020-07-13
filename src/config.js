@@ -3,9 +3,9 @@ module.exports = {
   siteDescription: "Akash is a full stack developer enthusiast ",
   siteKeywords:
     "Akash Kumar, CSE, Portfolio, kmrakash, software engineer, front-end engineer, web developer, javascript, kolkata",
-  siteUrl: "http://localhost:8000/",
+  siteUrl: "http://www.kmrakash.netlify.app",
   siteLanguage: "en_US",
-  // googleAnalyticsID: "UA-45666519-2",
+  googleAnalyticsID: "UA-171651349-1",
   // googleVerification: "DCl7VAf9tcz6eD9gb67NfkNnJ1PKRNcg8qQiwpbx9Lk",
   name: "Akash Kumar",
   location: "Gaya, Bihar",

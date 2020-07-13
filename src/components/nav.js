@@ -312,7 +312,7 @@ class Nav extends Component {
                     }}
                   >
                     <StyledResumeButton
-                      href="#"
+                      href="https://drive.google.com/file/d/118hD67fxOp3IzhDC70XPw5-hffxmDkvD/view?usp=sharing"
                       target="_blank"
                       rel="nofollow noopener noreferrer"
                     >
