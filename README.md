@@ -1,3 +1,7 @@
-## Portfolio
+# Portfolio
 
-Creating my portfolio using React
+This site is under continuous development
+
+## Tech Stack
+- React
+- Gatsby
