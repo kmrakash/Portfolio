@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: http://www.kmrakash.netlify.app/sitemap.xml
+Host: www.kmrakash.netlify.app
