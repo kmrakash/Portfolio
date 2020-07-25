@@ -4,6 +4,7 @@
   "description": "A portfolio of computer science junior undergrade",
   "private": true,
   "author": "Akash Kumar <aksh.iem22@gmail.com>",
+  "homepage": "https://kmrakash.github.io",
   "dependencies": {
     "animejs": "^3.1.0",
     "babel-plugin-styled-components": "^1.10.6",
@@ -24,6 +25,7 @@
     "gatsby-source-filesystem": "^2.1.40",
     "gatsby-transformer-remark": "^2.6.39",
     "gatsby-transformer-sharp": "^2.3.7",
+    "gh-pages": "^3.1.0",
     "lodash": "^4.17.15",
     "prismjs": "^1.17.1",
     "prop-types": "^15.7.2",
@@ -47,7 +49,7 @@
     "*.js": [
       "eslint --fix"
     ]
-   },
+  },
   "devDependencies": {
     "@upstatement/eslint-config": "0.4.3",
     "@upstatement/prettier-config": "^0.3.0",
@@ -66,8 +68,9 @@
     "portfolio"
   ],
   "scripts": {
-   "build": "gatsby build",
+    "build": "gatsby build",
     "develop": "gatsby develop",
+    "deploy": "gh-pages -d build",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",

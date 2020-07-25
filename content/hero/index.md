@@ -1,6 +1,6 @@
 ---
 title: "Hi, my name is"
 name: "Akash Kumar"
-subtitle: "Full Stack Developer"
+subtitle: "Full Stack Engineer"
 buttonText: "Get In Touch"
 ---
